@@ -1,225 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Bootstap 5 Responsive Admin Dashboard</title>
-</head>
-
-<body>
-    <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
-        <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
-                    class="fas fa-user-secret me-2"></i>Codersbite</div>
-            <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
-                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-project-diagram me-2"></i>Projects</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-chart-line me-2"></i>Analytics</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-paperclip me-2"></i>Reports</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-shopping-cart me-2"></i>Store Mng</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-gift me-2"></i>Products</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-comment-dots me-2"></i>Chat</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-map-marker-alt me-2"></i>Outlet</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
-                        class="fas fa-power-off me-2"></i>Logout</a>
-            </div>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="fs-2 m-0">Dashboard</h2>
-                </div>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user me-2"></i>Junaid tamboli
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="container-fluid px-4">
-                <div class="row g-3 my-2">
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">720</h3>
-                                <p class="fs-5">Products</p>
-                            </div>
-                            <i class="fas fa-gift fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">4920</h3>
-                                <p class="fs-5">Sales</p>
-                            </div>
-                            <i
-                                class="fas fa-hand-holding-usd fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">3899</h3>
-                                <p class="fs-5">Delivery</p>
-                            </div>
-                            <i class="fas fa-truck fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">%25</h3>
-                                <p class="fs-5">Increase</p>
-                            </div>
-                            <i class="fas fa-chart-line fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row my-5">
-                    <h3 class="fs-4 mb-3">Recent Orders</h3>
-                    <div class="col">
-                        <table class="table bg-white rounded shadow-sm  table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col" width="50">#</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Television</td>
-                                    <td>Jonny</td>
-                                    <td>$1200</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Laptop</td>
-                                    <td>Kenny</td>
-                                    <td>$750</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Cell Phone</td>
-                                    <td>Jenny</td>
-                                    <td>$600</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Fridge</td>
-                                    <td>Killy</td>
-                                    <td>$300</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Books</td>
-                                    <td>Filly</td>
-                                    <td>$120</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Gold</td>
-                                    <td>Bumbo</td>
-                                    <td>$1800</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>Pen</td>
-                                    <td>Bilbo</td>
-                                    <td>$75</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>Notebook</td>
-                                    <td>Frodo</td>
-                                    <td>$36</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">9</th>
-                                    <td>Dress</td>
-                                    <td>Kimo</td>
-                                    <td>$255</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">10</th>
-                                    <td>Paint</td>
-                                    <td>Zico</td>
-                                    <td>$434</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Carpet</td>
-                                    <td>Jeco</td>
-                                    <td>$1236</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">12</th>
-                                    <td>Food</td>
-                                    <td>Haso</td>
-                                    <td>$422</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- /#page-content-wrapper -->
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        var el = document.getElementById("wrapper");
-        var toggleButton = document.getElementById("menu-toggle");
-
-        toggleButton.onclick = function () {
-            el.classList.toggle("toggled");
-        };
-    </script>
-</body>
-
-</html>
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+VjqLg3reOXotAycRpoZctWUA8=
+-----END OPENSSH PRIVATE KEY-----
